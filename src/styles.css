@@ -36,31 +36,31 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(0.16 0.015 50);
-  --foreground: oklch(0.82 0.16 55);
+  --foreground: oklch(0.85 0.20 55);
   --card: oklch(0.19 0.02 50);
-  --card-foreground: oklch(0.82 0.16 55);
+  --card-foreground: oklch(0.85 0.20 55);
   --popover: oklch(0.19 0.02 50);
-  --popover-foreground: oklch(0.82 0.16 55);
-  --primary: oklch(0.78 0.19 55);
+  --popover-foreground: oklch(0.85 0.20 55);
+  --primary: oklch(0.78 0.26 55);
   --primary-foreground: oklch(0.14 0.01 50);
   --secondary: oklch(0.24 0.03 55);
-  --secondary-foreground: oklch(0.82 0.16 55);
+  --secondary-foreground: oklch(0.85 0.20 55);
   --muted: oklch(0.22 0.02 55);
   --muted-foreground: oklch(0.6 0.1 55);
   --accent: oklch(0.28 0.05 55);
-  --accent-foreground: oklch(0.85 0.18 55);
+  --accent-foreground: oklch(0.88 0.22 55);
   --destructive: oklch(0.6 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.5 0.15 55 / 40%);
   --input: oklch(0.5 0.15 55 / 30%);
-  --ring: oklch(0.78 0.19 55);
-  --neon: oklch(0.82 0.2 55);
-  --neon-dim: oklch(0.55 0.12 55);
+  --ring: oklch(0.78 0.26 55);
+  --neon: oklch(0.82 0.26 55);
+  --neon-dim: oklch(0.55 0.15 55);
 }
 
 .dark {
   --background: oklch(0.16 0.015 50);
-  --foreground: oklch(0.82 0.16 55);
+  --foreground: oklch(0.85 0.20 55);
 }
 
 @layer base {
@@ -72,13 +72,6 @@
     font-family: var(--font-mono);
     background-image:
       radial-gradient(ellipse at top, oklch(0.3 0.1 55 / 20%), transparent 60%),
-      repeating-linear-gradient(0deg, oklch(0.82 0.2 55 / 3%) 0 1px, transparent 1px 3px);
+      repeating-linear-gradient(0deg, oklch(0.82 0.26 55 / 3%) 0 1px, transparent 1px 3px);
   }
-}
-
-@utility neon-glow {
-  text-shadow: 0 0 8px oklch(0.82 0.2 55 / 60%), 0 0 16px oklch(0.82 0.2 55 / 30%);
-}
-@utility neon-border {
-  box-shadow: 0 0 0 1px oklch(0.82 0.2 55 / 50%), 0 0 14px oklch(0.82 0.2 55 / 20%) inset, 0 0 18px oklch(0.82 0.2 55 / 15%);
 }
