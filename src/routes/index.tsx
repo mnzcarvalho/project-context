@@ -31,7 +31,7 @@ function ContextF2P() {
 
       <div className="flex-1 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-4 min-h-0">
         <Sidebar active={active} setActive={setActive} disabled={tab !== "home"} />
-        <main className="rounded-xl neon-border bg-card/40 backdrop-blur-sm overflow-hidden flex flex-col min-h-[60vh]">
+        <main className="rounded-xl border border-border/60 bg-card/40 backdrop-blur-sm overflow-hidden flex flex-col min-h-[60vh]">
           {tab === "home" && <HomeView file={active} />}
           {tab === "configuracao" && (
             <ConfigView pathX={pathX} setPathX={setPathX} />
