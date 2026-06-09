@@ -156,8 +156,8 @@ function HomeView({ file }: { file: MockFile }) {
       <div className="flex items-center justify-between px-4 py-2 border-b border-border/60 bg-background/40">
         <div className="flex items-center gap-2 text-sm">
           <span className="text-muted-foreground">›</span>
-          <span className="text-primary neon-glow">{file.name}</span>
-          <span className="text-[10px] uppercase tracking-widest text-muted-foreground ml-2">
+          <span className="text-primary">{file.name}</span>
+          <span className="text-xs uppercase tracking-widest text-muted-foreground ml-2">
             {file.language}
           </span>
         </div>
